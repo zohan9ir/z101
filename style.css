@@ -1,0 +1,147 @@
+html{
+text-align:center;
+margin:0 auto;
+background-color:#d3fffe;
+background-image: url("");
+width: auto;
+}
+
+.cuerpo{
+text-align:center;
+padding-top:2px;
+margin-top:0px;
+margin-left:auto;
+margin-right:auto;
+background-color:#0c344d;
+border-top:double;
+border-left: double;
+border-right: double;
+border-color: white;
+border-radius:25px;
+width: 80%;
+cursor:default;
+font-family:arial;
+color:white;
+}
+
+#contenedor{
+margin: 0 auto;
+text-align:left;
+width:93%;
+}
+
+.tituloprincipalh1{
+font-family:arial;
+color:black;
+width:16%;
+margin:-9px;
+}
+
+.derechita{
+float: right; width: 58%; text-align:left; padding-right: 2%; padding-left:2%;
+}
+
+.izquierdita{
+float: left; width: 31.8%; text-align:left; padding-left: 2%; padding-right: 2%; padding-top:2%; background-color:#d3fffe; border-radius:25px; margin-left:2%;
+}
+
+hr {
+padding:0;
+margin:0;
+}
+
+.botonesparaelegirelcontenidoaver{
+display:block;
+}
+
+.estilodelosbotonesparaelegirelcontenidoaver{
+width:100%;
+cursor:pointer;
+padding:0px;
+border-radius:25px;
+}
+
+.visorazo{
+width:100%;
+height:200px;
+border:none;
+border-radius:25px;
+}
+
+.visorazo:hover{
+transition-duration:0.4s;
+position:fixed;
+width:77%;
+height:77%;
+z-index:4;
+border:5px solid gray;
+}
+
+.iframequemuestralalista{
+height:561px;
+width:100%;
+border:2px white solid;
+border-radius:25px;
+}
+
+.parrafoparaqueseacomodeelborde{
+padding-top:80%;
+}
+
+@media only screen and (max-width: 800px) {
+
+.cuerpo{
+width: 100%;
+border-style: none;
+border-color: none;
+}
+
+.izquierdita{
+width: 97%; text-align:left; padding-right: 0%; padding-bottom:0%; border:none; height:10%; padding-top:0%; margin-left:0%;
+}
+
+.botonesparaelegirelcontenidoaver{
+display:inline;
+}
+
+.estilodelosbotonesparaelegirelcontenidoaver{
+width:auto;
+padding:3.2px;
+}
+
+.derechita{
+ width: 95%; text-align:left; padding-left: 3%;
+}
+
+.iframequemuestralalista{
+height:290px;
+}
+
+.visorazo{
+height:250px;
+}
+
+.visorazo:hover{
+transition-duration:0s;
+position:relative;
+width:100%;
+height:250px;
+z-index:4;
+border:none;
+}
+
+nav{
+overflow-x: auto; /* Desplazamiento horizontal automático */
+overflow-y: hidden; /* Ocultar desplazamiento vertical */
+white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+.tituloprincipalh1{
+font-size:90%;
+width:23%;
+top:5px;
+left:23px;
+position:absolute;
+}
+
+}

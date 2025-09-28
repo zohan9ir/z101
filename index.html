@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Zoey 101 - Episodios de la serie Zoey 101 - Web Zoey101</title>
+<link rel="shortcut icon" href="titulazo.png">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<meta name="author" content="Johan Gzz">
+<meta name="description" content="Capitulos, episodios, videos, y más contenido de la serie Zoey 101 para ti.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+</head>
+<body class="cuerpo">
+<div align="left" style="padding-left:3%;"><h1><img class="tituloprincipalh1" src="titulazo.png" title="Zoey101" alt="Zoey 101"></h1></div>
+<div align="right" style="padding-right:3%; margin-top:-3.1%;">Hora: <i id="reloj"></i></div>
+
+<script type="text/javascript">
+function startTime(){
+today=new Date();
+h=today.getHours();
+m=today.getMinutes();
+s=today.getSeconds();
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('reloj').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);}
+function checkTime(i)
+{if (i<10) {i="0" + i;}return i;}
+window.onload=function(){startTime();}
+</script>
+
+<hr/>
+
+
+<div class="izquierdita">
+<iframe id="miIframe" src="visor_texto.html" name="visor" class="visorazo" allowfullscreen>Tu navegador no soporta este contenido</iframe>
+<nav>
+<a class="botonesparaelegirelcontenidoaver" href="temps/temporada1.html" target="iframelista"><button style="margin-top:13px;" class="estilodelosbotonesparaelegirelcontenidoaver"><img src="fld.gif"> TEMPORADA 1</button></a>
+<a class="botonesparaelegirelcontenidoaver" href="temps/temporada2.html" target="iframelista"><button class="estilodelosbotonesparaelegirelcontenidoaver"><img src="fld.gif"> TEMPORADA 2</button></a>
+<a class="botonesparaelegirelcontenidoaver" href="temps/temporada3.html" target="iframelista"><button class="estilodelosbotonesparaelegirelcontenidoaver"><img src="fld.gif"> TEMPORADA 3</button></a>
+<a class="botonesparaelegirelcontenidoaver" href="temps/temporada4.html" target="iframelista"><button class="estilodelosbotonesparaelegirelcontenidoaver"><img src="fld.gif"> TEMPORADA 4</button></a>
+<a class="botonesparaelegirelcontenidoaver" href="temps/pelis.html" target="iframelista"><button class="estilodelosbotonesparaelegirelcontenidoaver"><img src="fld.gif"> PELICULAS</button></a>
+<a class="botonesparaelegirelcontenidoaver" href="temps/musifondo.html" target="iframelista"><button class="estilodelosbotonesparaelegirelcontenidoaver"><img src="fld.gif"> EXTRAS</button></a>
+<a class="botonesparaelegirelcontenidoaver" href="https://zoeychat.chatango.com/" target="iframelista"><button style="margin-bottom:13px;" class="estilodelosbotonesparaelegirelcontenidoaver"><img src="txt.gif"> CHAT</button></a>
+</nav>
+<hr>
+</div>
+
+
+<script>
+        // Función para obtener parámetros de la URL
+        function getParameterByName(name, url = window.location.href) {
+            name = name.replace(/[\[\]]/g, '\\$&');
+            let regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+            let results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        // Obtener el parámetro "iframeUrl" de la URL
+        let iframeUrl = getParameterByName('iframeUrl');
+
+        // Si el parámetro existe, cambiar la URL del iframe
+        if (iframeUrl) {
+            document.getElementById('miIframe').src = iframeUrl;
+        }
+    </script>
+
+
+
+<div class="derechita">
+<iframe name="iframelista" class="iframequemuestralalista" src="instructivo.html"></iframe>
+</div>
+
+<p class="parrafoparaqueseacomodeelborde">2024 - <script>document.write(new Date().getFullYear())</script></p>
+<p>(c) website design: <img src="ovalozatine.png" width="4%"></p>
+<script id="cid0020000371534469473" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 300px;height: 400px;">{"handle":"zatineorg","arch":"js","styles":{"a":"ff0000","b":100,"c":"ffffff","d":"ffffff","g":"0000ff","k":"ff0000","l":"ff0000","m":"ff0000","p":"10","q":"ff0000","r":100,"pos":"br","cv":1,"cvbg":"ff0000","cvw":300,"cvh":30,"sbc":"ff0000","surl":0,"ticker":1,"fwtickm":1}}</script>
+</body>
+</html>
